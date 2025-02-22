@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "dweq3",
+      "surname": "Alex",
+      "lastname": "Adams",
+      "email": "alexadams@google.com",
+      "password": "test1212"
+    },
+    {
+      "id": "7add",
+      "email": "sevariik@gmail.com",
+      "lastname": "Seva",
+      "surname": "Me",
+      "password": "55555"
+    }
+  ]
+}
