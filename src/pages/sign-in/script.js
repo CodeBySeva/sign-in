@@ -1,18 +1,39 @@
-import axios from "axios";
+import { getData } from "../../utils/api";
+import { validateInputs } from "../../utils/validation";
 
 const form = document.forms.signIn;
 
 form.onsubmit = (e) => {
     e.preventDefault();
 
-    const emailInput = form.elements.email.value;
+    const fn = new FormData(form);
+    const email = fn.get('email');
+    const password = fn.get('password');
 
-    axios.get(`http://localhost:3001/users?email=${emailInput}`)
+    const isFormValid = validateInputs();
+
+    if (!isFormValid) {
+        console.log("Form is invalid");
+        return;
+    };
+
+    let user = {};
+
+    fn.forEach((value, key) => {
+        user[key] = value.trim();
+    });
+
+    getData(`user?email=${email}`)
         .then(res => {
             if (res.data.length > 0) {
                 const user = res.data[0];
-                localStorage.setItem('userId', user.id);
-                window.location.href = "/";
+                if (password == user.password) {
+                    localStorage.setItem('userId', user.id);
+                    localStorage.setItem('token', res.user.token);
+                    window.location.href = "/";
+                } else {
+                    alert('Password is incorrect!');
+                }
             } else {
                 alert('Пользователь не найден!');
             }

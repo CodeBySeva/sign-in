@@ -1,22 +1,32 @@
-import axios from "axios";
+import { postData } from "../../utils/api";
+import { generateToken } from "../../utils/token";
+import { validateInputs } from "../../utils/validation";
 
-const url = "http://localhost:3001/users";
 const form = document.forms.signUp;
 
 form.onsubmit = (e) => {
     e.preventDefault();
 
     let user = {};
-
     const fn = new FormData(form);
 
+    const isFormValid = validateInputs();
+
+    if (!isFormValid) {
+        console.log("Form is invalid");
+        return;
+    };
+
     fn.forEach((value, key) => {
-        user[key] = value;
+        user[key] = value.trim();
     });
 
-    axios.post(url, user)
+    let token = generateToken(16);
+
+    postData("users", { ...user, token })
         .then(res => {
-            localStorage.setItem("userId", res.data.id)
+            localStorage.setItem("userId", res.data.id);
+            localStorage.setItem("token", res.data.token);
             window.location.href = "/";
             console.log(res.data);
         })
@@ -24,3 +34,4 @@ form.onsubmit = (e) => {
             console.error(error);
         });
 };
+

@@ -67,4 +67,21 @@
         text-decoration: none;
         color: rgba(0, 71, 255, 1);
     }
+
+    .required.valid {
+        border-color: rgba(66, 0, 255, 1);
+    }
+
+    .required.invalid {
+        border-color: #e74c3c;
+    }
+
+    .required:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 71, 255, 1);
+    }
+
+    .required {
+        transition: border-color 0.3s ease-in-out;
+    }
 }

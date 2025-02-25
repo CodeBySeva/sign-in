@@ -1,6 +1,14 @@
-import axios from "axios";
+import { getData } from "./utils/api";
+import { checkAcces } from "./utils/token";
+import { createWalletsElement } from "./Components/wallets";
+import { render } from "./utils/libs";
+import { transactions } from "./Components/transactions";
 
-const url = "http://localhost:3001/users";
+checkAcces();
+
+const walletContainer = document.querySelector('.wallet-container');
+const tbody = document.querySelector('tbody');
+
 let userId = localStorage.getItem("userId");
 
 function showUser(user) {
@@ -17,8 +25,18 @@ function showUser(user) {
     if (email) email.textContent = user.email;
 };
 
-axios.get(`${url}/${userId}`)
+getData(`users/${userId}`)
     .then(res => showUser(res.data))
     .catch(error => {
         console.error(error);
     });
+
+fetch('http://localhost:3001/wallets')
+    .then(response => response.json())
+    .then(data => render(data, walletContainer, createWalletsElement))
+    .catch(error => console.error(error))
+
+fetch('http://localhost:3001/transactions')
+    .then(response => response.json())
+    .then(data => render(data, tbody, transactions))
+    .catch(error => console.error(error))

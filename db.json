@@ -1,18 +1,166 @@
 {
   "users": [
     {
-      "id": "dweq3",
-      "surname": "Alex",
-      "lastname": "Adams",
-      "email": "alexadams@google.com",
-      "password": "test1212"
-    },
-    {
-      "id": "7add",
+      "id": "2385",
       "email": "sevariik@gmail.com",
       "lastname": "Seva",
       "surname": "Me",
-      "password": "55555"
+      "password": "55555",
+      "token": "9DelDw9vMHmn3hkK"
+    },
+    {
+      "id": "8639",
+      "email": "alexadams@google.com",
+      "lastname": "alex",
+      "surname": "test",
+      "password": "test1212",
+      "token": "VKGqz8CGDxHvx6xL"
+    },
+    {
+      "id": "afb3",
+      "email": "sevulina@test.com",
+      "lastname": "S",
+      "surname": "M",
+      "password": "1234",
+      "token": "59cWV30kPtlodF68"
+    },
+    {
+      "id": "7aee",
+      "email": "aaaa@test.com",
+      "lastname": "a",
+      "surname": "a",
+      "password": "123",
+      "token": "O8lcGXJE4ogYYtuw"
+    },
+    {
+      "id": "32d8",
+      "email": "aaaa@test.com",
+      "lastname": "a",
+      "surname": "a",
+      "password": "666",
+      "token": "DTEx73vFvSnPBucp"
+    },
+    {
+      "id": "28ae",
+      "email": "edsfdgh@gmail.com",
+      "lastname": "Seva",
+      "surname": "a",
+      "password": "235ddh",
+      "token": "WrW1eBJEy9JZcsOz"
+    },
+    {
+      "id": "ad5d",
+      "email": "edsfdgh@gmail.com",
+      "lastname": "a",
+      "surname": "sevaq",
+      "password": "324534",
+      "token": "wavAO1f2Z5SjqmyX"
+    },
+    {
+      "id": "c06e",
+      "email": "edsfdgh@gmail.com",
+      "lastname": "dfgfsdg",
+      "surname": "jlkjl",
+      "password": "21346576",
+      "token": "pf0JrG88jKHXXMtj"
+    },
+    {
+      "id": "b096",
+      "email": "edsfdgh@gmail.com",
+      "lastname": "dfgfsdg",
+      "surname": "jlkjl",
+      "password": "234456",
+      "token": "Awe6XbcvMVj6vFUS"
+    },
+    {
+      "id": "b3b7",
+      "email": "edsfdgh@gmail.com",
+      "lastname": "dfgfsdg",
+      "surname": "jlkjl",
+      "password": "123456",
+      "token": "MrrKqcxUkR4zRarf"
+    },
+    {
+      "id": "a2cb",
+      "email": "sevariik@gmail.com",
+      "lastname": "a",
+      "surname": "Me",
+      "password": "123456",
+      "token": "mKw0u1axftdG5c16"
+    },
+    {
+      "id": "289c",
+      "email": "sevariik@gmail.com",
+      "lastname": "Seva",
+      "surname": "sdgf",
+      "password": "345346",
+      "token": "yv4WIe0lbiad51km"
+    }
+  ],
+  "wallets": [
+    {
+      "id": "aaa",
+      "type": "Visa",
+      "currency": "RUB"
+    },
+    {
+      "id": "abb",
+      "type": "Visa",
+      "currency": "RUB"
+    },
+    {
+      "id": "bbb",
+      "type": "Visa",
+      "currency": "RUB"
+    },
+    {
+      "id": "ccc",
+      "type": "Visa",
+      "currency": "RUB"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "123123",
+      "walletType": "VISA",
+      "category": "Автомобиль",
+      "amount": 414000000,
+      "date": "сегодня"
+    },
+    {
+      "id": "123321",
+      "walletType": "VISA",
+      "category": "Автомобиль",
+      "amount": 222000000,
+      "date": "1 день назад"
+    },
+    {
+      "id": "321123",
+      "walletType": "VISA",
+      "category": "Автомобиль",
+      "amount": 414000000,
+      "date": "2 день назад"
+    },
+    {
+      "id": "321321",
+      "walletType": "VISA",
+      "category": "Автомобиль",
+      "amount": 400000000,
+      "date": "3 день назад"
+    },
+    {
+      "id": "213213",
+      "walletType": "VISA",
+      "category": "Автомобиль",
+      "amount": 313000000,
+      "date": "4 день назад"
+    },
+    {
+      "id": "231231",
+      "walletType": "VISA",
+      "category": "Автомобиль",
+      "amount": 514000000,
+      "date": "5 день назад"
     }
   ]
 }

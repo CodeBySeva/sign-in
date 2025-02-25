@@ -168,10 +168,10 @@ main {
   gap: 20px;
 }
 
-.wallet1,
+/* .wallet1,
 .wallet2,
-.wallet3,
-.wallet4 {
+.wallet3, */
+.wallet {
   width: 282px;
   height: 160px;
   border-radius: 15px;
@@ -179,7 +179,7 @@ main {
   cursor: pointer;
 }
 
-.wallet1 {
+.wallet {
   background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
 }
 
@@ -195,10 +195,7 @@ main {
   background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
 }
 
-.wallet1 .visa,
-.wallet2 .visa,
-.wallet3 .visa,
-.wallet4 .visa {
+.wallet .visa {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -208,10 +205,7 @@ main {
   margin-left: 10px;
 }
 
-.wallet1 .rub,
-.wallet2 .rub,
-.wallet3 .rub,
-.wallet4 .rub {
+.wallet .rub {
   position: absolute;
   bottom: 10px;
   left: 10px;
