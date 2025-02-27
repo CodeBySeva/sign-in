@@ -11,7 +11,7 @@ const tbody = document.querySelector('tbody');
 
 let userId = localStorage.getItem("userId");
 
-function showUser(user) {
+export function showUser(user) {
     const userEmail = document.querySelector('#userEmail');
     if (userEmail) userEmail.textContent = user.email;
 
@@ -31,12 +31,10 @@ getData(`users/${userId}`)
         console.error(error);
     });
 
-fetch('http://localhost:3001/wallets')
-    .then(response => response.json())
-    .then(data => render(data, walletContainer, createWalletsElement))
-    .catch(error => console.error(error))
+getData(`wallets?userId=${userId}`)
+    .then(res => render(res.data, walletContainer, createWalletsElement))
+    .catch(error => console.error(error));
 
-fetch('http://localhost:3001/transactions')
-    .then(response => response.json())
-    .then(data => render(data, tbody, transactions))
-    .catch(error => console.error(error))
+getData(`transactions?userId=${userId}`)
+    .then(res => render(res.data, tbody, transactions))
+    .catch(error => console.error(error));

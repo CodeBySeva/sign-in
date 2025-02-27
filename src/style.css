@@ -195,7 +195,7 @@ main {
   background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
 }
 
-.wallet .visa {
+.wallet-name {
   position: absolute;
   top: 10px;
   left: 10px;

@@ -23,13 +23,13 @@ form.onsubmit = (e) => {
         user[key] = value.trim();
     });
 
-    getData(`user?email=${email}`)
+    getData(`users?email=${email}`)
         .then(res => {
             if (res.data.length > 0) {
                 const user = res.data[0];
                 if (password == user.password) {
                     localStorage.setItem('userId', user.id);
-                    localStorage.setItem('token', res.user.token);
+                    localStorage.setItem('token', user.token);
                     window.location.href = "/";
                 } else {
                     alert('Password is incorrect!');

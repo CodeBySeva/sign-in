@@ -8,21 +8,21 @@ export function transactions(data) {
 
     const walletType = document.createElement('td');
     walletType.classList.add('td');
-    walletType.textContent = data.walletType;
+    walletType.textContent = data.wallet.name;
 
-    const category = document.createElement('td');
-    category.classList.add('td');
-    category.textContent = data.category;
+    const description = document.createElement('td');
+    description.classList.add('td');
+    description.textContent = data.description;
 
-    const amount = document.createElement('td');
-    amount.classList.add('td');
-    amount.textContent = data.amount;
+    const sum = document.createElement('td');
+    sum.classList.add('td');
+    sum.textContent = data.sum;
 
-    const date = document.createElement('td');
-    date.classList.add('td');
-    date.textContent = data.date;
+    const createdAt = document.createElement('td');
+    createdAt.classList.add('td');
+    createdAt.textContent = data.createdAt;
 
-    tr.append(id, walletType, category, amount, date);
+    tr.append(id, walletType, description, sum, createdAt);
 
     return tr;
 };

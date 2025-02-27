@@ -2,7 +2,7 @@ const regex = {
     email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
     lastname: /^[a-zA-Zа-яА-ЯёЁ]+([ '-][a-zA-Zа-яА-ЯёЁ]+)*$/,
     surname: /^[a-zA-Zа-яА-ЯёЁ]+([ '-][a-zA-Zа-яА-ЯёЁ]+)*$/,
-    password: /^\d{6,}$/
+    password: /^[a-zA-Z0-9]{4,}$/,
 };
 
 export function validateInputs() {
