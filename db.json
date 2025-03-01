@@ -33,6 +33,13 @@
       "userId": "2385"
     },
     {
+      "id": "23a",
+      "name": "Humo",
+      "currency": "RUB",
+      "balance": 75000,
+      "userId": "2385"
+    },
+    {
       "id": "abc",
       "name": "Uzcard",
       "currency": "UZD",
@@ -47,7 +54,42 @@
       "userId": "8639"
     },
     {
-      "id": "ccc",
+      "id": "56c",
+      "name": "VISA",
+      "currency": "UZD",
+      "balance": 20000,
+      "userId": "8639"
+    },
+    {
+      "id": "cc26",
+      "name": "VISA",
+      "currency": "UZD",
+      "balance": 20000,
+      "userId": "8639"
+    },
+    {
+      "id": "c34cc",
+      "name": "VISA",
+      "currency": "UZD",
+      "balance": 20000,
+      "userId": "8639"
+    },
+    {
+      "id": "c65cc",
+      "name": "Humo",
+      "currency": "UZD",
+      "balance": 20000,
+      "userId": "8639"
+    },
+    {
+      "id": "cc4574c",
+      "name": "Humo",
+      "currency": "UZD",
+      "balance": 20000,
+      "userId": "8639"
+    },
+    {
+      "id": "c2hc",
       "name": "Humo",
       "currency": "UZD",
       "balance": 20000,
@@ -81,6 +123,72 @@
       "wallet": {
         "id": "abb",
         "name": "VISA"
+      },
+      "createdAt": "2025-02-20"
+    },
+    {
+      "id": "123321",
+      "description": "buy a guitar",
+      "sum": 222000000,
+      "userId": "8639",
+      "wallet": {
+        "id": "56c",
+        "name": "VISA"
+      },
+      "createdAt": "2025-02-20"
+    },
+    {
+      "id": "123321",
+      "description": "buy a guitar",
+      "sum": 222000000,
+      "userId": "8639",
+      "wallet": {
+        "id": "cc26",
+        "name": "VISA"
+      },
+      "createdAt": "2025-02-20"
+    },
+    {
+      "id": "123321",
+      "description": "buy a guitar",
+      "sum": 222000000,
+      "userId": "8639",
+      "wallet": {
+        "id": "c34cc",
+        "name": "VISA"
+      },
+      "createdAt": "2025-02-20"
+    },
+    {
+      "id": "123321",
+      "description": "buy a guitar",
+      "sum": 222000000,
+      "userId": "8639",
+      "wallet": {
+        "id": "c65cc",
+        "name": "Humo"
+      },
+      "createdAt": "2025-02-20"
+    },
+    {
+      "id": "123321",
+      "description": "buy a guitar",
+      "sum": 222000000,
+      "userId": "8639",
+      "wallet": {
+        "id": "cc4574c",
+        "name": "Humo"
+      },
+      "createdAt": "2025-02-20"
+    },
+    {
+      "id": "123321",
+      "description": "buy a guitar",
+      "sum": 222000000,
+      "userId": "8639",
+      "wallet": {
+        "id": "c2hc",
+        "name": "Humo"
       },
       "createdAt": "2025-02-20"
     },
@@ -127,6 +235,17 @@
         "name": "Uzcard"
       },
       "createdAt": "2025-01-05"
+    },
+    {
+      "id": "f8bd",
+      "description": "sakdgfg",
+      "sum": "12000",
+      "userId": "8639",
+      "wallet": {
+        "id": "visa",
+        "name": "VISA"
+      },
+      "createdAt": "2025-03-01"
     }
   ]
 }

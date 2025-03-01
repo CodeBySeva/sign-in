@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1728px;
+    margin: 0 auto;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+header {
+    background: #eee;
+    padding: 25px 265px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19.41px;
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+
+        a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .email {
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+
+        button {
+            border: none;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+}
+
+main {
+    padding: 44px 263px;
+
+    h1 {
+        font-size: 48px;
+        line-height: 59.42px;
+    }
+
+    a {
+        display: block;
+        color: rgba(0, 71, 255, 1);
+        font-size: 18px;
+        line-height: 22.28px;
+        font-weight: 700;
+        text-decoration: none;
+        margin-bottom: 20px;
+        margin-top: 11px;
+    }
+
+    .main-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            width: 140px;
+            height: 36px;
+            cursor: pointer;
+            border: 1px solid rgba(0, 71, 255, 1);
+            background-color: rgba(0, 71, 255, 1);
+            color: white;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+}
+
+.transactions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        font-size: 24px;
+        line-height: 29.11px;
+        margin-bottom: 32px;
+    }
+
+    th {
+        color: rgba(185, 192, 209, 1);
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17.15px;
+    }
+
+    table {
+        width: 1200px;
+        max-width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        margin-bottom: 21px;
+    }
+
+    th,
+    td {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 17.15px;
+    }
+
+    a {
+        font-size: 16px;
+        display: block;
+        margin-top: 10px;
+        color: rgba(0, 71, 255, 1);
+        text-decoration: underline;
+    }
+}

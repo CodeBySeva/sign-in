@@ -14,6 +14,6 @@ export function checkAcces() {
     const token = localStorage.getItem('token');
 
     if (!token) {
-        window.location.href = '/src/pages/sign-up';
+        window.location.replace('/src/pages/sign-up/');
     };
 };

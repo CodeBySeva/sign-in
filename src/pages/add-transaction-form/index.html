@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Добавить транзакцию</title>
+</head>
+
+<body>
+    <main class="form-box container">
+        <h1>Добавить транзакцию</h1>
+        <form name="transactionsForm">
+            <select id="wallet" name="wallet">
+                <option value="" disabled selected hidden>Из кошелька</option>
+                <option value="visa">VISA</option>
+                <option value="humo">Humo</option>
+                <option value="uzcard">Uzcard</option>
+            </select>
+            <input type="text" id="sum" placeholder="Сумма" name="sum">
+            <input type="text" id="category" placeholder="Категория" name="category">
+            <button type="submit">Добавить</button>
+        </form>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

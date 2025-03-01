@@ -3,8 +3,10 @@ import { checkAcces } from "./utils/token";
 import { createWalletsElement } from "./Components/wallets";
 import { render } from "./utils/libs";
 import { transactions } from "./Components/transactions";
+import { header } from "./Components/header";
 
 checkAcces();
+header();
 
 const walletContainer = document.querySelector('.wallet-container');
 const tbody = document.querySelector('tbody');
