@@ -8,7 +8,8 @@
 }
 
 .container {
-  max-width: 1728px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -42,10 +43,7 @@ h1 {
 
 header {
   background: #eee;
-  padding: 25px 265px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 25px 10px;
   font-size: 16px;
   line-height: 19.41px;
 
@@ -77,8 +75,14 @@ header {
   }
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 main {
-  padding: 44px 263px;
+  padding: 44px 0;
 
   h1 {
     font-size: 48px;
@@ -98,8 +102,10 @@ main {
 }
 
 .wallets {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 21px;
   margin-bottom: 74px;
   margin-top: 74px;
@@ -132,6 +138,12 @@ main {
 
 }
 
+.account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .wallet-container::-webkit-scrollbar {
   height: 4px;
 }
@@ -142,7 +154,7 @@ main {
 }
 
 .wallet-container::-webkit-scrollbar-thumb:hover {
-  background-color: #888; 
+  background-color: #888;
 }
 
 .transactions {

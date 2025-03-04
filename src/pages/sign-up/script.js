@@ -27,7 +27,7 @@ form.onsubmit = (e) => {
         .then(res => {
             localStorage.setItem("userId", res.data.id);
             localStorage.setItem("token", res.data.token);
-            window.location.href = "/";
+            window.location.replace("/");
             console.log(res.data);
         })
         .catch(error => {

@@ -36,16 +36,18 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
+
+    input,
+    select {
+        width: 100%;
+        padding: 19px 0 17px 25px;
+        height: 56px;
+        margin: 8px 0;
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-radius: 10px;
+    }
 }
 
-input {
-    width: 100%;
-    padding: 19px 353px 17px 25px;
-    height: 56px;
-    margin: 8px 0;
-    border: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 10px;
-}
 
 input::placeholder {
     color: rgba(0, 0, 0, 1);

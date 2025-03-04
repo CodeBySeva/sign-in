@@ -30,7 +30,7 @@ form.onsubmit = (e) => {
                 if (password == user.password) {
                     localStorage.setItem('userId', user.id);
                     localStorage.setItem('token', user.token);
-                    window.location.href = "/";
+                    window.location.replace("/");
                 } else {
                     alert('Password is incorrect!');
                 }

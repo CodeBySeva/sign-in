@@ -1,20 +1,22 @@
 export function header() {
-    const header = document.querySelector('header');
+  const header = document.querySelector('header');
 
-    header.innerHTML = `
+  header.innerHTML = `
+  <div class="container header-container">
   <nav>
-      <a href="/">Главная</a>
-      <a href="/src/pages/wallets/index.html">Мои кошельки</a>
-      <a href="/src/pages/transactions/">Мои транзакции</a>
-    </nav>
-    <nav>
-      <a href="">
-        <span class="email"></span>
-      </a>
-    <button id="logout">
-        <img src="/log-out.svg" alt="">
-    </button>
-    </nav>
+  <a href="/">Главная</a>
+  <a href="/src/pages/wallets/index.html">Мои кошельки</a>
+  <a href="/src/pages/transactions/">Мои транзакции</a>
+  </nav>
+  <nav>
+  <a href="">
+  <span class="email"></span>
+  </a>
+  <button id="logout">
+  <img src="/log-out.svg" alt="">
+  </button>
+  </nav>
+  </div>
   `
 
   let logout = document.querySelector('#logout');

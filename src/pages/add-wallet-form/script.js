@@ -1,7 +1,22 @@
+import axios from "axios";
 import { postData } from "../../utils/api";
+import { render } from "../../utils/libs";
+import { createOption } from "../../Components/createOption";
 
 const form = document.forms.addWallet;
+const currencySelect = document.querySelector("#currencySelect");
 let userId = localStorage.getItem("userId");
+
+axios.get("https://api.apilayer.com/currency_data/list?base=USD&symbols=EUR,GBP", {
+    headers: {
+        apikey: "VLuQkzytFlL9EenW2KV6tO9ggKGtQ5I2",
+    }
+})
+    .then(res => {
+        render(Object.keys(res.data.currencies), currencySelect, createOption);
+    })
+    .catch(error => console.error(error))
+
 
 form.onsubmit = (e) => {
     e.preventDefault();

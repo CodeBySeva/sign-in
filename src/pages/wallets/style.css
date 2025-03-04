@@ -5,12 +5,11 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-
-    color-scheme: light dark;
 }
 
 .container {
-    max-width: 1728px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -30,12 +29,16 @@ body {
     min-height: 100vh;
 }
 
-header {
-    background: #eee;
-    padding: 25px 265px;
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header {
+    max-width: 1200px;
+    background: #eee;
+    padding: 25px 10px;
     font-size: 16px;
     line-height: 19.41px;
 
@@ -67,6 +70,7 @@ header {
     }
 }
 
+
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
@@ -82,13 +86,13 @@ h1 {
 .wallets-div {
     max-width: 1200px;
     margin-top: 44px;
-    
+
     .main-text {
         display: flex;
         flex-direction: column;
         gap: 11px;
     }
-    
+
     a {
         font-size: 18px;
         font-weight: 700;
@@ -144,7 +148,7 @@ h1 {
     background: linear-gradient(to right, #20BF55, #01BAEF);
 }
 
-.wallet:nth-child(4n + 4){
+.wallet:nth-child(4n + 4) {
     background: linear-gradient(to right, #380036, #0CBABA);
 }
 

@@ -14,7 +14,9 @@
             <h2>Добавить кошелек</h2>
             <form name="addWallet">
                 <input type="text" placeholder="Имя" name="name">
-                <input type="text" placeholder="Валюта" name="currency">
+                <select id="currencySelect" name="currency">
+                    <option value="" disabled selected hidden>Валюта</option>
+                </select>
                 <button type="submit">Добавить</button>
             </form>
         </div>
